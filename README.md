@@ -101,7 +101,7 @@ As we said earlier, your goal is to improve our sign up form.
 
 If you go to `http://localhost:3000/`, you should see our home page :
 
-![](https://raw.githubusercontent.com/enercoop/Fibonacci/master/public/readme/home.png)
+![](https://raw.githubusercontent.com/enercoop/Fibonacci/master/public/readme/index.png)
 
 Here, you should be able to click on the 'Sign up !' button, and go to the sign up page :
 
@@ -109,9 +109,9 @@ Here, you should be able to click on the 'Sign up !' button, and go to the sign 
 
 This is where you step in. We want you to update this very simple form into a two steps form that should look like this :
 
-![](https://raw.githubusercontent.com/enercoop/Fibonacci/master/public/readme/sign_up_1of2.png)
+![](https://raw.githubusercontent.com/enercoop/Fibonacci/master/public/readme/signup1.jpg)
 
-![](https://raw.githubusercontent.com/enercoop/Fibonacci/master/public/readme/sign_up_2of2.png)
+![](https://raw.githubusercontent.com/enercoop/Fibonacci/master/public/readme/signup2.png)
 
 We will not tell you strong rules about how to make the form, and what it should do, just make it as good as you can. But if you don't know how to start, here are a few guidelines you can follow :
 
