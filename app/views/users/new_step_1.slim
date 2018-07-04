@@ -1,0 +1,24 @@
+div id='marketing'
+  div id='sign_up' class='card'
+    = render 'breadcrumb', locals: { step: 1 }
+    = simple_form_for @form, url: users_path, method: :post, class:'mt-5' do |f|
+      h2 Personal informations
+      = f.input :first_name, placeholder: 'First name'
+      = f.input :last_name, placeholder: 'Last name'
+      hr
+      h2 Address
+      div class='row'
+        div class='col-4'
+          = f.input :street_number, placeholder: 'Street number'
+        div class='col-8'
+          = f.input :street_name, placeholder: 'Street name'
+      div class='row'
+        div class='col-4'
+          = f.input :zip_code, placeholder: 'Zip'
+        div class='col-8'
+          = f.input :city, placeholder: 'City'
+      hr
+      h2 Sign in informations
+      = f.input :email, placeholder: 'Email'
+      = f.input :password, placeholder: 'Password'
+      = f.button :submit, 'Go to next step', class: 'btn btn-outline-success btn-lg'

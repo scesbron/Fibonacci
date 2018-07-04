@@ -1,0 +1,11 @@
+div id='marketing'
+  div id='sign_up' class='card'
+    = render 'breadcrumb', locals: { step: 2 }
+    = simple_form_for @form, url: users_path, method: :post, class:'mt-5' do |f|
+      h2 Situation
+      = f.input :situation, as: :radio_buttons, collection: User.situations
+      hr
+      h2 Technical informations
+      = f.input :pdl, placeholder: 'pdl'
+      = link_to 'go back', previous_users_path, method: :post
+      = f.button :submit, 'Submit', class: 'btn btn-outline-success btn-lg'

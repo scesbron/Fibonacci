@@ -32,9 +32,11 @@ gem 'clearance', '~> 1.16'
 # SimpleForm made forms easy!
 gem 'simple_form', '~> 3.5'
 # Bootstrap for style
-gem 'bootstrap', '~> 4.0.0.beta'
+gem 'bootstrap', '~> 4.1.1'
 # AASM is a continuation of the acts-as-state-machine rails plugin, built for plain Ruby objects
 gem 'aasm', '~> 4.12', '>= 4.12.2'
+
+gem 'rectify', '~> 0.12.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
