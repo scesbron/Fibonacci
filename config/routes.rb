@@ -26,4 +26,7 @@ Rails.application.routes.draw do
     end
     get '/sign_up' => :new, as: :sign_up
   end
+
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 end

@@ -11,6 +11,7 @@ class UserComplete < Rectify::Command
       user.assign_attributes(form.attributes)
       user.next
       user.save!
+      UserMailer.welcome(user).deliver_later
       broadcast(:ok, user)
     end
   end

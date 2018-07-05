@@ -53,4 +53,10 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.web_console.whitelisted_ips = '172.18.0.1'
+
+  # Mailer
+  config.action_mailer.perform_deliveries    = true
+  config.action_mailer.delivery_method       = :smtp
+  config.action_mailer.smtp_settings         = { address: 'mailcatcher', port: 1025 }
+  config.action_mailer.raise_delivery_errors = true
 end

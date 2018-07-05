@@ -37,6 +37,7 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'aasm', '~> 4.12', '>= 4.12.2'
 
 gem 'rectify', '~> 0.12.0'
+gem 'sidekiq', '~> 5.1.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
