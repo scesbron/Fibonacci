@@ -1,4 +1,9 @@
 - step = locals[:step]
-div class='breadcrumb'
-  div class=('breadcrumb-step' + (' breadcrumb-step-active' if step == 1).to_s) Step 1
-  div class=('breadcrumb-step' + (' breadcrumb-step-active' if step == 2).to_s) Step 2
+div class='breadcrumb-container'
+  div class='breadcrumb-content'
+    div class=('breadcrumb-step' + (' breadcrumb-step-active' if step == 1).to_s)
+      div class='breadcrumb-step-number' 1
+      div class='breadcrumb-step-text' Step 1
+    div class=('breadcrumb-step' + (' breadcrumb-step-active' if step == 2).to_s)
+      div class='breadcrumb-step-number' 2
+      div class='breadcrumb-step-text' Step 2

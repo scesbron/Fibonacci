@@ -3,3 +3,9 @@ en:
     errors:
       messages:
         already_used: is already used
+  activerecord:
+    attributes:
+      user/situations:
+        move_in: I move in
+        built_new: I build a new flat/house
+        temporary_access: I need a temporary access

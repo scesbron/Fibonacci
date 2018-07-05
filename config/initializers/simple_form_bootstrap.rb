@@ -4,7 +4,7 @@ SimpleForm.setup do |config|
   config.button_class = 'btn btn-default'
   config.boolean_label_class = nil
 
-  config.wrappers :vertical_form, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
+  config.wrappers :vertical_form, tag: 'div', class: 'form-group' do |b|
     b.use :html5
     b.use :placeholder
     b.optional :maxlength
@@ -14,9 +14,9 @@ SimpleForm.setup do |config|
     b.optional :readonly
     b.use :label, class: 'control-label'
 
-    b.use :input, class: 'form-control'
-    b.use :error, wrap_with: { tag: 'span', class: 'help-block' }
-    b.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
+    b.use :input, class: 'form-control', error_class: 'is-invalid', valid_class: 'is-valid'
+    b.use :error, wrap_with: { tag: 'span', class: 'invalid-feedback' }
+    b.use :hint,  wrap_with: { tag: 'p', class: 'valid-feedback' }
   end
 
   config.wrappers :vertical_file_input, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|

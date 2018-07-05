@@ -13,3 +13,42 @@
     form
       .form-group
         text-align: left
+
+.breadcrumb-container
+  display: flex
+  justify-content: center
+
+.breadcrumb-content
+  width: 50%
+  display: flex
+  margin: 20px 0 60px 0
+
+.breadcrumb-step
+  position: relative
+  width: 100%
+  border-bottom: 1px solid #CCCCCC
+
+.breadcrumb-step-number
+  position: absolute
+  width: 30px
+  height: 30px
+  line-height: 30px
+  border-radius: 50%
+  background-color: white
+  color: black
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+
+.breadcrumb-step-active .breadcrumb-step-number
+  color: white
+  background-color: black
+
+.breadcrumb-step-text
+  position: absolute
+  left: 0
+  right: 0
+  bottom: -40px
+  margin: auto

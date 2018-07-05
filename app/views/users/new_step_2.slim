@@ -3,7 +3,7 @@ div id='marketing'
     = render 'breadcrumb', locals: { step: 2 }
     = simple_form_for @form, url: users_path, method: :post, class:'mt-5' do |f|
       h2 Situation
-      = f.input :situation, as: :radio_buttons, collection: User.situations
+      = f.input :situation, as: :radio_buttons, collection: user_situations_options
       hr
       h2 Technical informations
       = f.input :pdl, placeholder: 'pdl'

@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   enum situation: {
     move_in: 1,
-    build_new: 2,
+    built_new: 2,
     temporary_access: 3
   }
 

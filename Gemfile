@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Clearance for authentication & authorization with email & password
 gem 'clearance', '~> 1.16'
 # SimpleForm made forms easy!
-gem 'simple_form', '~> 3.5'
+gem 'simple_form', '~> 4.0'
 # Bootstrap for style
 gem 'bootstrap', '~> 4.1.1'
 # AASM is a continuation of the acts-as-state-machine rails plugin, built for plain Ruby objects
