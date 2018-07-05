@@ -2,7 +2,6 @@ class UsersController < Clearance::UsersController
 
   def new
     @form = signup_form.from_model(user_from_session)
-    logger.debug("########### #{@form.inspect}")
     render @form.view
   end
 
