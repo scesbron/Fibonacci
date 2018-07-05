@@ -48,6 +48,7 @@ group :development, :test do
   # Rubocop is a Ruby code style checking tool
   gem 'guard', '~> 2.14', '>= 2.14.1'
   gem 'guard-rubocop', '~> 1.3'
+  gem 'factory_bot_rails', '~> 4.10.0'
 end
 
 group :development do
@@ -57,6 +58,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'rspec-rails', '~> 3.7.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
